@@ -1,0 +1,37 @@
+body {
+  --text-color: #121212;
+  --bkg-color: #d6d6d6;
+}
+body.dark-theme {
+  --text-color: #d6d6d6;
+  --bkg-color: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --text-color: #d6d6d6;
+    --bkg-color: #121212;
+  }
+  body.light-theme {
+    --text-color: #121212;
+    --bkg-color: #d6d6d6;
+  }
+}
+
+* {
+  font-family: Nunito;
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+h1,
+p {
+  color: var(--text-color);
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../media/NunitoSans/NunitoSans-Regular.ttf');
+}
