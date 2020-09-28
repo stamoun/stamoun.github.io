@@ -1,6 +1,6 @@
 # Welcome to My Web Site
 
-I wanted to teach myself HTML/JS/CSS so here we are. I wanted a lightweight site as well as something easily maintainable; hence I did not use framework/libraries.
+This is the source repo of my personal [website](http://www.stamoun.com).
 
 # TO DO
 

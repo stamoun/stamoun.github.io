@@ -1,0 +1,16 @@
+@import 'settings';
+$page-padding-mobile: 10px;
+
+.app {
+  text-align: center;
+}
+
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  font-family: $font-family;
+}

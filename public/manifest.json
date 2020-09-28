@@ -1,0 +1,45 @@
+{
+  "short_name": "Nicolas St-Amour's Web Site",
+  "name": "Nicolas St-Amour's Little Corner on the Web",
+  "icons": [
+    {
+      "src": "favicon/favicon-32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "favicon/favicon-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "favicon/favicon-152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "favicon/favicon-167.png",
+      "type": "image/png",
+      "sizes": "167x167"
+    },
+    {
+      "src": "favicon/favicon-180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "favicon/favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon/favicon-196.png",
+      "type": "image/png",
+      "sizes": "196x196"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
