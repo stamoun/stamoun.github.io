@@ -1,0 +1,30 @@
+// Font
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito-Regular.woff') format('woff');
+  src: url('/fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family: 'Nunito', 'Helvetica', 'Arial', 'sans-serif';
+$font-size--small: 0.9rem;
+$font-size--smallest: 0.8rem;
+$font-size--base: 1rem;
+$font-size--large: 1.1rem;
+$font-size--largest: 1.2rem;
+
+// Colors
+$bg--light: #fff9f2;
+$element-bg--light: darken($bg--light, 10%);
+$element-bg--light2: darken($bg--light, 50%);
+$text--light: #1f1b18;
+$link--light: #ff7300;
+$link--light2: lighten($link--light, 10%);
+
+$bg--dark: $text--light;
+$element-bg--dark: lighten($bg--dark, 10%);
+$element-bg--dark2: lighten($bg--dark, 50%);
+$text--dark: darken($bg--light, 5%);
+$link--dark: lighten($link--light, 10%);
+$link--dark2: darken($link--dark, 10%);

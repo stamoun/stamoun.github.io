@@ -1,24 +1,38 @@
-import React, { Suspense } from 'react';
-import { useTranslation } from 'react-i18next';
-import '../styles/app.scss';
+import React, { Suspense, useEffect, useState } from 'react';
+import './App.scss';
 import { Footer } from './Footer';
+import { Header } from './Header';
+
+const getDarkMode = () => {
+  const localStorageTheme = localStorage.getItem('theme');
+  if (localStorageTheme !== null) {
+    return localStorageTheme === 'dark';
+  }
+
+  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+};
 
 // TODO nicer loader
-const Loader = () => <div className="app">loading...</div>;
+const Loader = () => <div id="app">loading...</div>;
 
 const Content = () => {
-  const { i18n } = useTranslation();
+  const prefersDark = getDarkMode();
+  const [isDark, setIsDark] = useState(prefersDark);
 
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-  };
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDark]);
 
   return (
-    <div className="app">
-      <div>
-        <button onClick={() => changeLanguage('fr')}>fr</button>
-        <button onClick={() => changeLanguage('en')}>en</button>
-      </div>
+    <div id="app">
+      <Header setIsDarkHandler={setIsDark} useDarkTheme={isDark} />
+      <div>MAIN: TODO</div>
       <Footer />
     </div>
   );

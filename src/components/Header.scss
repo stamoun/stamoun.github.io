@@ -1,0 +1,65 @@
+@import 'config';
+
+#header {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 1rem;
+  font-size: $font-size--small;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 2em;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  border-radius: 1em;
+}
+
+.slider:before {
+  position: absolute;
+  height: 1.5em;
+  width: 1.5em;
+  left: 0.25em;
+  top: 0.25em;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1em);
+}
+
+.slider:after {
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: $font-size--largest;
+}
+
+#dark-mode-slider:before {
+  content: '🌞';
+}
+
+input:checked + #dark-mode-slider:before {
+  content: '🌛';
+}
+
+select {
+  border: none;
+}

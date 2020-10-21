@@ -1,0 +1,9 @@
+@import 'config';
+
+#footer {
+  font-size: $font-size--small;
+
+  .divider {
+    margin: 0 0.5rem;
+  }
+}

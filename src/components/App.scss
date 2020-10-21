@@ -1,0 +1,13 @@
+@import 'config';
+@import 'colors';
+@import 'elements';
+
+#app {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#app > * {
+  flex: 1 100%;
+}

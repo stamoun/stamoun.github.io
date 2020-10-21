@@ -1,0 +1,86 @@
+@import 'config';
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #{$bg--dark};
+    --text-color: #{$text--dark};
+    --link-color: #{$link--dark};
+    --link-color-hover: #{$link--dark2};
+    --element-bg: #{$element-bg--dark};
+    --element-bg2: #{$element-bg--dark2};
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #{$bg--light};
+    --text-color: #{$text--light};
+    --link-color: #{$link--light};
+    --link-color-hover: #{$link--light2};
+    --element-bg: #{$element-bg--light};
+    --element-bg2: #{$element-bg--light2};
+  }
+}
+
+@media (prefers-color-scheme: no-preference) {
+  :root {
+    --bg-color: #{$bg--light};
+    --text-color: #{$text--light};
+    --link-color: #{$link--light};
+    --link-color-hover: #{$link--light2};
+    --element-bg: #{$element-bg--light};
+    --element-bg2: #{$element-bg--light2};
+  }
+}
+
+:root {
+  --bg-color: #{$bg--light};
+  --text-color: #{$text--light};
+  --link-color: #{$link--light};
+  --link-color-hover: #{$link--light2};
+  --element-bg: #{$element-bg--light};
+  --element-bg2: #{$element-bg--light2};
+}
+
+:root.dark {
+  --bg-color: #{$bg--dark};
+  --text-color: #{$text--dark};
+  --link-color: #{$link--dark};
+  --link-color-hover: #{$link--dark2};
+  --element-bg: #{$element-bg--dark};
+  --element-bg2: #{$element-bg--dark2};
+}
+
+html,
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  &:hover {
+    color: var(--link-color-hover);
+  }
+}
+
+.icon {
+  background-color: var(--element-bg);
+}
+
+.slider:before {
+  background-color: var(--element-bg2);
+}
+
+.slider {
+  background-color: var(--element-bg);
+}
+
+input:checked + .slider {
+  background-color: var(--element-bg);
+}
+
+select {
+  background-color: var(--element-bg);
+  color: var(--text--dark);
+}
