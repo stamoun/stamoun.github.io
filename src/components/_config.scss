@@ -1,13 +1,11 @@
-// Font
 @font-face {
   font-family: 'Nunito';
-  src: url('/fonts/Nunito-Regular.woff') format('woff');
-  src: url('/fonts/Nunito-Regular.ttf') format('truetype');
+  src: local('Nunito'), url('../fonts/Nunito-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
-$font-family: 'Nunito', 'Helvetica', 'Arial', 'sans-serif';
+$font-family: 'Nunito';
 $font-size--small: 0.9rem;
 $font-size--smallest: 0.8rem;
 $font-size--base: 1rem;

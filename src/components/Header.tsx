@@ -14,12 +14,8 @@ export const Header = (params: any) => {
     <div id="header">
       <span className="drop-button">
         <select onChange={changeLanguage}>
-          <option value="en" selected={i18n.language === 'en'}>
-            English
-          </option>
-          <option value="fr" selected={i18n.language === 'fr'}>
-            Français
-          </option>
+          <option value="en">English</option>
+          <option value="fr">Français</option>
         </select>
       </span>
 
